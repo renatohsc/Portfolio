@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- green material primary -->
+    <color name="custom_teal">#009688</color>
+
+    <!-- red accent -->
+    <color name="custom_red">#FF1744</color>
+
+
+
+
+    <!-- other buttons . -->
+    <style name="buttontealstyle" parent="Theme.AppCompat.Light">
+    <!-- Customize your theme here. -->
+        <item name="android:layout_width">@dimen/abc_panel_menu_list_width</item>
+        <item name="android:layout_height">@dimen/abc_action_bar_default_height_material</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/custom_teal</item>
+        <item name="android:layout_marginBottom">@dimen/abc_action_bar_overflow_padding_end_material</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">displayToast</item>
+
+    </style>
+
+    <!-- last Button . -->
+    <style name="buttonredstyle" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+        <item name="android:layout_width">@dimen/abc_panel_menu_list_width</item>
+        <item name="android:layout_height">@dimen/abc_action_bar_default_height_material</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/custom_red</item>
+        <item name="android:layout_marginBottom">@dimen/abc_action_bar_overflow_padding_end_material</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:onClick">displayToast</item>
+
+    </style>
+
+
+
+
+</resources>
