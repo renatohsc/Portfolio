@@ -1,21 +1,24 @@
 package com.example.android.portfolio;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ButterKnife.bind(this);
 
     }
 
@@ -41,22 +44,20 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+     // trying to implement butterknife
+    @OnClick({ R.id.button_streamer,
+            R.id.button_super_duo1,
+            R.id.button_super_duo2,
+            R.id.button_build,
+            R.id.button_xyz,
+            R.id.button_capstone})
 
-    public void displayToast(View viewtoast) {
+    public void displayToast(Button button_butter) {
 
-        Button button = (Button) viewtoast;
+            Toast.makeText(this, String.format(getString(R.string.message_toast) + " " + button_butter.getText()), Toast.LENGTH_SHORT).show();
 
-        String buttonText = (String) button.getText();
 
-        Context cont = getApplicationContext();
-        CharSequence text = getString(R.string.message_toast)
-                + " " + buttonText;
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(cont, text, duration);
-        toast.show();
-
-    }
+   }
 
 
 }

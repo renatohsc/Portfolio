@@ -10,4 +10,7 @@
     <string name="capstone">capstone: my own app</string>
     <string name="message_toast">This button will launch my </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity">My Apps Portfolio</string>
+
+
 </resources>
